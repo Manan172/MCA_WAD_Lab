@@ -48,11 +48,17 @@ function addItem() {
     let t = document.getElementById("table");
 
     t.insertRow().innerHTML = `
-        <td>${n}</td>
-        <td>${q}</td>
-        <td>${p}</td>
-        <td><button onclick="this.closest('tr').remove()">Remove</button></td>
-    `;
+    <td>${n}</td>
+    <td>${q}</td>
+    <td>${p}</td>
+    <td class="text-center">
+        <button class="btn btn-danger btn-sm"
+                onclick="this.closest('tr').remove()">
+            Remove
+        </button>
+    </td>
+`;
+
 
     name.value = qty.value = price.value = "";
 }
