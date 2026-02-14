@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,14 +51,14 @@ function addItem() {
 
     let row = table.insertRow();
 
-    row.innerHTML = 
+    row.innerHTML = `
         <td>${name}</td>
         <td>${qty}</td>
         <td>${price}</td>
         <td>
             <button class="btn btn-danger" onclick="this.closest('tr').remove()">Remove</button>
         </td>
-    ;
+    `;
 }
 
 </script>
